@@ -16,7 +16,8 @@ def button(x1, y1, x2, y2, txt):
 
 def change_output(x=out_put):
     lab.config(text=x)
-    return
+    
+    
 
 
 def button_press(a):
@@ -28,7 +29,7 @@ def button_press(a):
         if a in "1234567890":
             out_put = out_put + a
             change_output(out_put)
-        else:
+        elif a in "+-*/":
             lst.append(out_put)
             change_output(a)
             out_put =" "
